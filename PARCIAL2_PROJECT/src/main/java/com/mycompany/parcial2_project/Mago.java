@@ -6,26 +6,26 @@ package com.mycompany.parcial2_project;
 
 /**
  *
- * @author ronny
+ * @author sgrue
  */
-public class Dragon extends Criatura implements Volador {
-    private String escamas;
+public class Mago extends Criatura implements Magico {
+    private String hechizos;
     private Arma arma;
 
-    public Dragon(String nombre, int salud, int fuerza, String escamas, Arma arma) {
+    public Mago(String nombre, int salud, int fuerza, String hechizos, Arma arma) {
         super(nombre, salud, fuerza);
-        this.escamas = escamas;
+        this.hechizos = hechizos;
         this.arma = arma;
     }
 
     @Override
-    public void volar() {
-        System.out.println(nombre + " está volando.");
+    public void lanzarHechizo() {
+        System.out.println(nombre + " lanza el hechizo: " + hechizos);
     }
 
     @Override
-    public void aterrizar() {
-        System.out.println(nombre + " aterrizó.");
+    public void aprenderHechizo() {
+        System.out.println(nombre + " ha aprendido un nuevo hechizo.");
     }
 
     @Override
@@ -34,3 +34,4 @@ public class Dragon extends Criatura implements Volador {
         objetivo.defender(daño);
     }
 }
+
