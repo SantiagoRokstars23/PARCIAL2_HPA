@@ -1,13 +1,22 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
-package com.mycompany.parcial2_project;
 
-/**
- *
- * @author Luisx
- */
 public class Arma {
+
+    private String nombre;
+    private int dañoAdicional;
+
+    public Arma(String nombre, int dañoAdicional) {
+        this.nombre = nombre;
+        this.dañoAdicional = dañoAdicional;
+    }
+
+    public void atacarConArma(Criatura objetivo) {
+        System.out.println("Atacando con " + nombre);
+        objetivo.defender(dañoAdicional);
+    }
+
+    public int getDañoAdicional() {
+        return dañoAdicional;
     
+
+    }
 }
