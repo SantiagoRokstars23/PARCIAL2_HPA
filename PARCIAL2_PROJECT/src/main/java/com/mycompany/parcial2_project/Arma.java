@@ -1,3 +1,7 @@
+package com.mycompany.parcial2_project;
+
+import com.mycompany.parcial2_project.Criatura;
+
 
 public class Arma {
 
@@ -16,7 +20,5 @@ public class Arma {
 
     public int getDañoAdicional() {
         return dañoAdicional;
-    
-
-    }
+    }
 }

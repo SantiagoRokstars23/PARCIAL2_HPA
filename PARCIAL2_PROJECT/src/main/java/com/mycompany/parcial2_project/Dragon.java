@@ -32,5 +32,5 @@ public class Dragon extends Criatura implements Volador {
     public void atacar(Criatura objetivo) {
         int daño = fuerza + arma.getDañoAdicional();
         objetivo.defender(daño);
-    }
+    }
 }
