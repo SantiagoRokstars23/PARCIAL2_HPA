@@ -1,7 +1,5 @@
 package com.mycompany.parcial2_project;
 
-import com.mycompany.parcial2_project.Criatura;
-
 
 public class Arma {
 
